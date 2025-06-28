@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Courier New", Courier, monospace;
+  background: linear-gradient(to bottom, lightgreen, lightblue);
+  min-height: 100dvh;
+  text-align: center;
+}
+
+.container {
+  background-color: aliceblue;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+.input {
+  padding: 20px 10px;
+  font-size: 18px;
+  background-color: white;
+  border-radius: 5px;
+  text-align: center;
+  width: 100px;
+  margin-top: 12px;
+}
+
+.error-message {
+  color: red;
+  font-weight: 600;
+  margin: 10px;
+  display: none;
+}
+
+.btn {
+  text-transform: uppercase;
+  width: 250px;
+  height: 45px;
+  margin: 20px 0;
+  font-size: 18px;
+  background-color: black;
+  border-radius: 5px;
+  color: aliceblue;
+}
+
+.btn:hover {
+  background-color: green;
+  cursor: pointer;
+  transition: background-color 350ms ease-in-out;
+}
+
+.gallery img {
+  width: 400px;
+  height: 250px;
+  background: gray;
+  object-fit: cover;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.gallery {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .gallery img {
+    width: 310px;
+  }
+}
+
+@media (max-width: 320px) {
+  .gallery img {
+    width: 270px;
+  }
+}
